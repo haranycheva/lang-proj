@@ -1,6 +1,7 @@
 :root {
-    --accent-color:#263238;;
+    --accent-color:#263238;
     --text-color: #8F95A5;
+    --cube:cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .is-hidden {
@@ -54,6 +55,7 @@ h4, h5, h6, h1, h2, h3, p{
 .header-cont {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
     max-width: 320px;
     padding-left: 14px;
@@ -84,6 +86,27 @@ h4, h5, h6, h1, h2, h3, p{
     color: var(--accent-color);
 }
 
+.nav-menu-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-menu-item::after{
+    content: '';
+    position: absolute;
+    top: 90%;
+    right: 2%;
+    width: 100%;
+    height: 2px;
+    transform: translateX(-100%);
+    background-color: var(--accent-color);
+    transition: all 250ms, --cube;
+}
+
+.nav-menu-item:hover::after{
+    transform: translateX(0);
+}
+
 .btn-talk {
     display: block;
     width: 160px;
@@ -98,9 +121,6 @@ h4, h5, h6, h1, h2, h3, p{
 }
 
 .modal-open {
-    position: absolute;
-    top: 46px;
-    right: 16px;
     background-color: transparent;
     border: transparent;
 }
@@ -109,6 +129,7 @@ h4, h5, h6, h1, h2, h3, p{
     font-weight: 400;
     font-size: 24px;
     line-height: 1.5;
+    color: #000000;
 }
 
 .header-logo >span, .modal-logo >span {
@@ -146,14 +167,27 @@ h4, h5, h6, h1, h2, h3, p{
 }
 
 .modal-logo {
-    display: block;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #C4C4C4;
+    margin-bottom: 20px;
+}
+
+.modal-nav {
+    position: relative;
+}
+
+.modal-nav::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+}
+
+.modal-nav {
+    margin-top: 46px;
 }
 
 .modal-nav-menu {
     margin-bottom: 69px;
-    margin-top: 46px;
 }
 
 .modal-btn-talk{
@@ -185,11 +219,6 @@ h4, h5, h6, h1, h2, h3, p{
         padding-top: 39px;
     }
 
-    .modal-open {
-        top: 50px;
-        right: 50px;
-    }
-
     .header-logo, .modal-logo {
         font-size: 30px;
     }
@@ -214,7 +243,7 @@ h4, h5, h6, h1, h2, h3, p{
         height: 39px;
     }
 
-    .modal-nav-menu {
+    .modal-nav{
         margin-top: 35px;
     }
 
@@ -233,10 +262,6 @@ h4, h5, h6, h1, h2, h3, p{
         padding-top: 39px;
     }
 
-    .modal-open {
-        top: 53px;
-        right: 39px;
-    }
     .modal-open-svg {
         width: 30px;
         height: 17px;
@@ -249,8 +274,15 @@ h4, h5, h6, h1, h2, h3, p{
         padding-left: 26px;
     }
 
+    .modal-btn-talk {
+        max-width: 210px;
+        height: 60px;
+        font-size: 18px;
+        padding: 16px 63px;
+    }
+
     
-    .modal-nav-menu {
+    .modal-nav-menu{
         margin-bottom: 80px;
     }
 
