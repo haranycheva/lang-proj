@@ -86,12 +86,13 @@ h4, h5, h6, h1, h2, h3, p{
     color: var(--accent-color);
 }
 
-.nav-menu-item {
+
+.nav-menu-item, .modal-nav-menu-item{
     position: relative;
     overflow: hidden;
 }
 
-.nav-menu-item::after{
+.nav-menu-item::after, .modal-nav-menu-item::after{
     content: '';
     position: absolute;
     top: 90%;
@@ -103,7 +104,11 @@ h4, h5, h6, h1, h2, h3, p{
     transition: all 250ms, --cube;
 }
 
-.nav-menu-item:hover::after{
+.modal-nav-menu-item::after {
+    top: 70%;
+}
+
+.nav-menu-item:hover::after, .modal-nav-menu-item:hover::after{
     transform: translateX(0);
 }
 
