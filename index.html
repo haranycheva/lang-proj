@@ -1,56 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
-</head>
-<body>
-  <header>
-    <div class="header-cont">
-      <a href="" class="header-logo link">Brit<span>lex</span></a >
-      <nav class="nav">
-        <ul class="nav-menu list">
-          <li class="nav-menu-item"><a href="" class="link nav-menu-item-link">Home</a></li>
-          <li class="nav-menu-item"><a href="" class="link nav-menu-item-link">Skills</a></li>
-          <li class="nav-menu-item"><a href="" class="link nav-menu-item-link">About Us</a></li>
-          <li class="nav-menu-item"><a href="" class="link nav-menu-item-link">Pricing</a></li>
-          <li class="nav-menu-item"><a href="" class="link nav-menu-item-link">Contacts</a></li>
-        </ul>
-        <a href="" class="btn-talk link">Let’s Talk</a>
-      </nav>
-      <button class="modal-open" type="button" data-modal-open >
-        <svg class="modal-open-svg" width="34px" height="19px" >
-          <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
-        </svg>
-      </button >
-    </вш >
-  </header>
-  <div class="back-modal  is-hidden"  data-modal>
-    <div class="modal">
-      <button class="modal-close" data-modal-close >
-        <svg class="modal-close-svg"  width="34px" height="34px" >
-          <use href="./images/symbol-defs.svg#icon-cross"></use>
-      </svg>
-      </button >
-      <a href="" class="modal-logo link">Brit<span>lex</span></a>
-      <nav class="modal-nav">
-        <ul class="modal-nav-menu list">
-          <li class="modal-nav-menu-item"><a href="" class="link modal-nav-menu-item-link">Home</a></li>
-          <li class="modal-nav-menu-item"><a href="" class="link modal-nav-menu-item-link">Skills</a></li>
-          <li class="modal-nav-menu-item"><a href="" class="link modal-nav-menu-item-link">About Us</a></li>
-          <li class="modal-nav-menu-item"><a href="" class="link modal-nav-menu-item-link">Pricing</a></li>
-          <li class="modal-nav-menu-item"><a href="" class="link modal-nav-menu-item-link">Contacts</a></li>
-        </ul>
-        <a href="" class="modal-btn-talk link">Let’s Talk</a>
-      </nav>
+  </head>
+  <body>
+    <header>
+      <div class="header-cont">
+        <a href="" class="header-logo link">Brit<span>lex</span></a>
+        <nav class="nav">
+          <ul class="nav-menu list">
+            <li class="nav-menu-item">
+              <a href="" class="link nav-menu-item-link">Home</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="" class="link nav-menu-item-link">Skills</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="" class="link nav-menu-item-link">About Us</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="" class="link nav-menu-item-link">Pricing</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="" class="link nav-menu-item-link">Contacts</a>
+            </li>
+          </ul>
+          <a href="" class="btn-talk link">Let’s Talk</a>
+        </nav>
+        <button class="modal-open" type="button" data-modal-open>
+          <svg class="modal-open-svg" width="34px" height="19px">
+            <use href="./images/symbol-defs.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container-hero">
+          <picture>
+            <source
+              srcset="
+                ./images/hero-img/girl-320-1x.webp 1x,
+                ./images/hero-img/girl-320-2x.webp 2x,
+                ./images/hero-img/girl-320-3x.webp 3x
+              "
+              type="image/webp"
+              media="(max-width:574px)"
+            />
+            <source
+              srcset="
+                ./images/hero-img/girl-320-1x.jpg 1x,
+                ./images/hero-img/girl-320-2x.jpg 2x,
+                ./images/hero-img/girl-320-3x.jpg 3x
+              "
+              media="(max-width:574px)"
+            />
+            <source
+              srcset="
+                ./images/hero-img/girl-575-1x.webp 1x,
+                ./images/hero-img/girl-575-2x.webp 2x,
+                ./images/hero-img/girl-575-3x.webp 3x
+              "
+              type="image/webp"
+              media="(min-width:575px) and (max-width:767px)"
+            />
+            <source
+              srcset="
+                ./images/hero-img/girl-575-1x.jpg  1x,
+                ./images/hero-img/girl-575-2x.jpg 2x,
+                ./images/hero-img/girl-575-3x.jpg 3x
+              "
+              media="(min-width:575px) and (max-width:767px)"
+            />
+            <source
+              srcset="
+                ./images/hero-img/girl-768-1x.webp 1x,
+                ./images/hero-img/girl-768-2x.webp 2x,
+                ./images/hero-img/girl-768-3x.webp 3x
+              "
+              type="image/webp"
+              media="(min-width:768px) and (max-width:991px)"
+            />
+            <source
+              srcset="
+                ./images/hero-img/girl-768-1x.jpg 1x,
+                ./images/hero-img/girl-768-2x.jpg 2x,
+                ./images/hero-img/girl-768-3x.jpg 3x
+              "
+              media="(min-width:768px) and (max-width:991px)"
+            />
+            <source
+              srcset="
+                ./images/hero-img/girl-992-1x.webp 1x,
+                ./images/hero-img/girl-992-2x.webp 2x,
+                ./images/hero-img/girl-992-3x.webp 3x
+              "
+              type="image/webp"
+              media="(min-width:992px) and (max-width:1599px)"
+            />
+            <source
+              srcset="
+                ./images/hero-img/girl-992-1x.jpg 1x,
+                ./images/hero-img/girl-992-2x.jpg 2x,
+                ./images/hero-img/girl-992-3x.jpg 3x
+              "
+              media="(min-width:992px) and (max-width:1599px)"
+            />
+            <source
+              srcset="
+                ./images/hero-img/girl-1600-1x.webp 1x,
+                ./images/hero-img/girl-1600-2x.webp 2x,
+                ./images/hero-img/girl-1600-3x.webp 3x
+              "
+              type="image/webp"
+              media="(min-width:1600px)"
+            />
+            <source
+              srcset="
+                ./images/hero-img/girl-1600-1x.jpg 1x,
+                ./images/hero-img/girl-1600-2x.jpg 2x,
+                ./images/hero-img/girl-1600-3x.jpg 3x
+              "
+              media="(min-width:1600px)"
+            />
+            <img src="./images/hero-img/girl-320-1x.jpg" alt=girl_learns_English" />
+          </picture>
+          <div class="hero-text-cont">
+            <h1 class="hero-title"><span><span>Learn</span> Any</span> Foreign Language</h1>
+            <p>
+              With our teachers who write a program for each student, you will
+              be able to make your first sketch after the first lesson.
+            </p>
+            <button class="hero-btn" type="button">Get started</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="back-modal is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <svg class="modal-close-svg" width="34px" height="34px">
+            <use href="./images/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <a href="" class="modal-logo link">Brit<span>lex</span></a>
+        <nav class="modal-nav">
+          <ul class="modal-nav-menu list">
+            <li class="modal-nav-menu-item">
+              <a href="" class="link modal-nav-menu-item-link">Home</a>
+            </li>
+            <li class="modal-nav-menu-item">
+              <a href="" class="link modal-nav-menu-item-link">Skills</a>
+            </li>
+            <li class="modal-nav-menu-item">
+              <a href="" class="link modal-nav-menu-item-link">About Us</a>
+            </li>
+            <li class="modal-nav-menu-item">
+              <a href="" class="link modal-nav-menu-item-link">Pricing</a>
+            </li>
+            <li class="modal-nav-menu-item">
+              <a href="" class="link modal-nav-menu-item-link">Contacts</a>
+            </li>
+          </ul>
+          <a href="" class="modal-btn-talk link">Let’s Talk</a>
+        </nav>
+      </div>
     </div>
-  </div >
-  <script src="./modal.js"></script>
-</body>
+    <script src="./modal.js"></script>
+  </body>
 </html>
