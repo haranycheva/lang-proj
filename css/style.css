@@ -788,7 +788,6 @@ p {
         height: 260px;
     }
     .grid-4 {
-        padding-top: 32px;
         padding-bottom: 79px;
     }
     .grid-1 {
@@ -811,5 +810,8 @@ p {
     }
     .grid-4 .skill-item-btn {
         bottom: 79px;
+    }
+    .grid-4 .skill-item-title {
+        margin-top: 32px;
     }
 }
