@@ -737,9 +737,11 @@ p {
     }
     .item-800 {
         margin-right: 100px;
+        margin-bottom: 0;
     }
     .item-18 {
         margin-right: 75px;
+        margin-bottom: 0;
     }
     .about-item-p {
         font-size: 14px;
