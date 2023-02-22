@@ -61,7 +61,13 @@ p {
 }
 
 /* container */
-
+.pricing-container {
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 19px;
+    padding-right: 21px;
+}
 
 .about-container {
     margin: 0 auto;
@@ -415,7 +421,61 @@ p {
     margin-bottom: 50px;
 }
 
+/* pricing */
 
+.pricing {
+    padding-top: 90px;
+}
+
+.pricing-title {
+    margin-bottom: 50px;
+}
+
+.pricing-title-h3 {
+    margin-bottom: 17px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--accent-color);
+}
+
+.pricing-list-item + .pricing-list-item {
+    margin-top: 65px;
+}
+
+.pricing-list-item > p{
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.pricing-svg{
+    display: block;
+    margin: 0 auto;
+}
+
+.price {
+    margin: 0 auto;
+    margin-top: 33px;
+    display: flex;
+    padding: 5px 12px;
+    max-width: 170px;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+}
+
+.month {
+    align-self: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #546269;
+}
+
+.cost {
+    margin-right: 13px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--accent-color);
+}
 /* adaptive */
 
 @media screen and (min-width:575px) {
@@ -563,6 +623,55 @@ p {
     }
     .about-item-p {
         font-size: 14px;
+    }
+    /* pricing */
+    .pricing-container {
+        min-width: 575px;
+        padding-left: 90px;
+        padding-right: 91px;
+    }
+    .pricing-title{
+        margin-bottom: 60px;
+    }
+    .pricing-svg {
+        margin-bottom: 18px;
+    }
+    .pricing-1 {
+        width: 291px;
+        height: 291px;
+    }
+    .pricing-2 {
+        width: 314px;
+        height: 241px;
+    }
+    .pricing-3 {
+        width: 253px;
+        height: 253px;
+    }
+    .pricing-title-h3 {
+        margin-bottom: 21px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .pricing-list-item > p {
+        font-size: 14px;
+    }
+    .seven-day{
+        width: 329px;
+        margin: 0 auto;
+    }
+    .price {
+        max-width: 205px;
+        padding: 6px 17px;
+        margin-top: 31px;
+    }
+    .cost{
+        margin-right: 7px;
+        font-size: 24px;
+    }
+    .month {
+        font-size: 16px;
     }
 }
 @media screen and (min-width:768px) {
@@ -718,7 +827,64 @@ p {
     .item-18 {
         margin-right: 45px;
     }
-
+    /* pricing */
+    .pricing {
+        padding-top: 88px;
+    }
+    .pricing-container {
+        min-width: 768px;
+        padding-left: 37px;
+        padding-right: 30px;
+    }
+    .pricing-title{
+        margin-bottom: 40px;
+    }
+    .pricing-1 {
+        width: 197px;
+        height: 197px;
+    }
+    .pricing-2 {
+        width: 219px;
+        height: 168px;
+    }
+    .pricing-3{
+        width: 210px;
+        height: 210px;
+    }
+    .pricing-list {
+        display: flex;
+        text-align: left;
+        align-items: last baseline;
+        justify-content: space-between;
+    }
+    .pricing-svg {
+        margin-bottom: 0;
+    }
+    .seven-day {
+        max-width: 210px;
+    }
+    .pricing-list-item {
+        max-width: 220px;
+    }
+    .pricing-list-item + .pricing-list-item {
+        margin: 0;
+    }
+    .pricing-title-h3 {
+        font-size: 20px;
+        max-width: 174px;
+        margin-top: 7px;
+    }
+    .pr-item-3 .pricing-title-h3 {
+        max-width: 94px;
+        margin-top: 0;
+    }
+    .price-2, .price-3{
+        margin-top: 50px;
+    }
+    .price {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media screen and (min-width:992px){
     .header-cont {
@@ -831,6 +997,66 @@ p {
     }
     .about-numb {
         font-size: 30px;
+    }
+    /* pricing */
+    .pricing {
+        padding-top: 125px;
+    }
+    .pricing-title {
+        margin-bottom: 30px;
+    }
+    .pricing-container {
+        max-width: 992px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .pricing-list-item {
+        max-width: 300px;
+    }
+    .pricing-1 {
+        width: 222px;
+        height: 222px;
+    }
+    .pricing-2 {
+        width: 267px;
+        height: 195px;
+    }
+    .pricing-3 {
+        width: 242px;
+        height: 242px;
+    }
+    .seven-day {
+        margin: 0;
+        max-width: 280px;
+    }
+    .price {
+        margin-left: 0;
+    }
+    .pricing-title-h3 {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+    .pricing-list-item .pricing-title-h3 {
+        max-width: none;
+    }
+    .pricing-list-item > p {
+        font-size: 16px;
+    }
+    .pr-item-3 >p {
+        max-width: 260px;
+    }
+    .pr-item-2 .pricing-title-h3 {
+    margin-bottom: 25px;
+    }
+    .price-3 {
+        margin-top: 31px;
+    }
+    .cost {
+        font-size: 24px;
+        margin-right: 5px;
+    }
+    .month {
+        font-size: 16px;
     }
 }
 @media screen and (min-width:1600px){
@@ -974,5 +1200,55 @@ p {
     }
     .item-800, .item-18 {
         margin-right: 131px;
+    }
+    /* pricing */
+    .pricing{
+        padding-top: 204px;
+    }
+    .pricing-container {
+        max-width: 1600px;
+        padding-left: 131px;
+        padding-right: 131px;
+    }
+    .pricing-title {
+        margin-bottom: 60px;
+    }
+    .pricing-list-item {
+        max-width: 426px;
+    }
+    .pricing-svg {
+        width: 426px;
+        height: 320px;
+    }
+    .pricing-title-h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    .pr-item-3 .pricing-title-h3 {
+        margin-top: 40px;
+    }
+    .pr-item-2 .pricing-title-h3{
+        margin-bottom: 17px;
+    }
+    .pricing-list-item > p {
+        font-size: 20px;
+        max-width: none;
+    }
+    p.seven-day {
+        width: 426px;
+    }
+    .price {
+        max-width: 240px;
+        padding: 4px 23px;
+    }
+    .month {
+        font-size: 18px;
+    }
+    .cost {
+        margin-right: 20px;
+    }
+    .price-2, .price-3 {
+        margin-top: 60px;
     }
 }
