@@ -180,6 +180,10 @@ p {
     border: transparent;
 }
 
+.modal-open-svg {
+    display: block;
+}
+
 .header-logo, .modal-logo, .foot-logo {
     font-weight: 400;
     font-size: 24px;
@@ -212,6 +216,7 @@ p {
     padding-top: 25px;
     padding-right: 7px;
     padding-left: 15px;
+    padding-bottom: 30px;
 }
 
 .modal-close {
